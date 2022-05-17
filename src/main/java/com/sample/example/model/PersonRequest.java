@@ -1,4 +1,4 @@
-package com.luongtt.luongttvmo.model;
+package com.sample.example.model;
 
 import lombok.*;
 

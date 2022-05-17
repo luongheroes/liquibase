@@ -1,4 +1,4 @@
-package com.luongtt.luongttvmo.entity;
+package com.sample.example.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,19 +8,14 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "person")
+@Table(name = "role")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Persons {
+public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    private String name;
-    private String address;
-
-    @ManyToOne
-    private Role role;
+    private String role;
 }

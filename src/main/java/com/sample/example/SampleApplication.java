@@ -1,13 +1,13 @@
-package com.luongtt.luongttvmo;
+package com.sample.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LuongttVmoApplication {
+public class SampleApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(LuongttVmoApplication.class, args);
+        SpringApplication.run(SampleApplication.class, args);
     }
 
 }

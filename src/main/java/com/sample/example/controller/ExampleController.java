@@ -1,8 +1,8 @@
-package com.luongtt.luongttvmo.controller;
+package com.sample.example.controller;
 
-import com.luongtt.luongttvmo.entity.Persons;
-import com.luongtt.luongttvmo.model.PersonRequest;
-import com.luongtt.luongttvmo.service.ExampleService;
+import com.sample.example.entity.Persons;
+import com.sample.example.model.PersonRequest;
+import com.sample.example.service.ExampleService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

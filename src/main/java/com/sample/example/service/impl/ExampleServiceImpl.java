@@ -1,11 +1,11 @@
-package com.luongtt.luongttvmo.service.impl;
+package com.sample.example.service.impl;
 
-import com.luongtt.luongttvmo.entity.Persons;
-import com.luongtt.luongttvmo.entity.Role;
-import com.luongtt.luongttvmo.model.PersonRequest;
-import com.luongtt.luongttvmo.repository.PersonRepository;
-import com.luongtt.luongttvmo.repository.RoleRepository;
-import com.luongtt.luongttvmo.service.ExampleService;
+import com.sample.example.entity.Persons;
+import com.sample.example.entity.Role;
+import com.sample.example.model.PersonRequest;
+import com.sample.example.repository.PersonRepository;
+import com.sample.example.repository.RoleRepository;
+import com.sample.example.service.ExampleService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

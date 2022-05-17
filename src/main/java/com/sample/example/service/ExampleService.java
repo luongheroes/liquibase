@@ -1,7 +1,7 @@
-package com.luongtt.luongttvmo.service;
+package com.sample.example.service;
 
-import com.luongtt.luongttvmo.entity.Persons;
-import com.luongtt.luongttvmo.model.PersonRequest;
+import com.sample.example.entity.Persons;
+import com.sample.example.model.PersonRequest;
 
 import java.util.List;
 

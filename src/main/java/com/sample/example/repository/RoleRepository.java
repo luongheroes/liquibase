@@ -1,6 +1,6 @@
-package com.luongtt.luongttvmo.repository;
+package com.sample.example.repository;
 
-import com.luongtt.luongttvmo.entity.Role;
+import com.sample.example.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
