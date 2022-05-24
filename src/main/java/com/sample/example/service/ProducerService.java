@@ -13,6 +13,7 @@ public class ProducerService {
 
     private KafkaTemplate<String, String> kafkaTemplate;
 
+    // send data kafka
     public void sendMessage(String data) {
         log.info(String.format("#### -> Producing data -> %s", data));
         this.kafkaTemplate.send(TOPIC, data);

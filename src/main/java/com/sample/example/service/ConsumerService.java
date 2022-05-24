@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class ConsumerService {
 
+    // receive data kafka
     @KafkaListener(topics = "users", groupId = "groupId")
     public void consume(String data) {
         log.info(String.format("#### -> Consumed message -> %s", data));
