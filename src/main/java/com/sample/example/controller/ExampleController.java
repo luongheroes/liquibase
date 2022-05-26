@@ -1,13 +1,11 @@
 package com.sample.example.controller;
 
 import com.sample.example.entity.Persons;
+import com.sample.example.model.PersonData;
 import com.sample.example.model.PersonRequest;
 import com.sample.example.service.ExampleService;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,5 +22,15 @@ public class ExampleController {
     @PostMapping("/person")
     public Persons getAllPersons(@RequestBody PersonRequest personRequest) {
         return exampleService.createPerson(personRequest);
+    }
+
+    @GetMapping("/personXml/{id}")
+    public PersonData getPersonXmlById(@PathVariable("id") Long id) {
+        return exampleService.findByIdXml(id);
+    }
+
+    @GetMapping("/person/{id}")
+    public PersonData getPersonById(@PathVariable("id") Long id) {
+        return exampleService.findById(id);
     }
 }

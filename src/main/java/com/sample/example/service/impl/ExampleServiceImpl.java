@@ -2,6 +2,9 @@ package com.sample.example.service.impl;
 
 import com.sample.example.entity.Persons;
 import com.sample.example.entity.Role;
+import com.sample.example.mapper.PersonMapper;
+import com.sample.example.mapper.PersonMapperXml;
+import com.sample.example.model.PersonData;
 import com.sample.example.model.PersonRequest;
 import com.sample.example.repository.PersonRepository;
 import com.sample.example.repository.RoleRepository;
@@ -23,6 +26,10 @@ public class ExampleServiceImpl implements ExampleService {
 
     RoleRepository roleRepository;
 
+    PersonMapper personMapper;
+
+    PersonMapperXml personMapperXml;
+
     @Override
     public List<Persons> allPerson() {
         return personRepository.findAll();
@@ -36,5 +43,15 @@ public class ExampleServiceImpl implements ExampleService {
                 .role(Objects.nonNull(role)? role.get(): null)
                 .build();
         return personRepository.save(persons);
+    }
+
+    @Override
+    public PersonData findByIdXml(Long id) {
+        return personMapperXml.findPersonById(id);
+    }
+
+    @Override
+    public PersonData findById(Long id) {
+        return personMapper.findById(id);
     }
 }
